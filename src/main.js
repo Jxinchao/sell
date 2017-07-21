@@ -1,9 +1,13 @@
 import Vue from 'vue';
+import vueRouter from 'vue-router';
 import App from './App';
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#index',
-  components: { App },
-  template: '<App/>'
+Vue.use(vueRouter); // 使用vue.use的方法注册vue-router
+
+let app = Vue.extend(App);
+
+ler router = new vueRouter();
+
+router.map({
+  
 });
