@@ -22,6 +22,10 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // 添加封号不会报错配置
+    'semi': ['error', 'always'],
+    // 取消es6缩进使用webstorm的缩颈
+    'indent': 0
   }
 }
