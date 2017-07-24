@@ -6,8 +6,8 @@ Vue.use(vueRouter); // 使用vue.use的方法注册vue-router
 
 let app = Vue.extend(App);
 
-ler router = new vueRouter();
+let router = new vueRouter();
 
 router.map({
-  
+
 });
