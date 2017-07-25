@@ -1,13 +1,11 @@
 import Vue from 'vue';
-import vueRouter from 'vue-router';
+import VueRouter from 'vue-router';
 import App from './App';
+import goods from './components/goods/goods';
 
-Vue.use(vueRouter); // 使用vue.use的方法注册vue-router
+const router = new VueRouter({
+  routers: [
+    { path: '/goods', component: goods }
+  ]
+}).$mount('#app');
 
-let app = Vue.extend(App);
-
-let router = new vueRouter();
-
-router.map({
-
-});
