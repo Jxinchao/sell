@@ -6,14 +6,16 @@
         <router-link to="/goods">商品</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/ratings">评论</router-link>>
+        <router-link to="/ratings">评论</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/seller">商家</router-link>>
+        <router-link to="/seller">商家</router-link>
       </div>
     </div>
     <!-- 路由外链 -->
-    <router-view></router-view>
+    <div class="main">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -21,6 +23,7 @@
   import header from './components/header/header.vue';
 
   export default{
+      name: 'app',
       components: {
           'v-header': header
       }
