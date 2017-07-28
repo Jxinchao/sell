@@ -22,6 +22,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
+      'components': resolve('src/components'), // 配置根目录的写法
       '@': resolve('src')
     }
   },
