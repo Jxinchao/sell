@@ -26,6 +26,8 @@ module.exports = {
     // 添加封号不会报错配置
     'semi': ['error', 'always'],
     // 取消es6缩进使用webstorm的缩颈
-    'indent': 0
+    'indent': 0,
+    // 取消函数的空格ESlintrc的规则  给她设置为0 就是默认不去执行他
+    'space-before-function-paren': 0
   }
 }
